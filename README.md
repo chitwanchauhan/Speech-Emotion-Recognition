@@ -1,3 +1,4 @@
+
 # 🎙️ Speech Emotion Recognition using LSTM and MFCC
 
 This project focuses on recognizing human emotions from speech signals using a deep learning approach. The system uses **MFCC (Mel-frequency cepstral coefficients)** for feature extraction and an **LSTM (Long Short-Term Memory)** model for classification. The goal is to classify speech into different emotions such as *happy*, *sad*, *angry*, *fear*, *disgust*, and *neutral*.
@@ -11,7 +12,7 @@ The model uses the **TESS (Toronto Emotional Speech Set)** dataset, which consis
 📥 **Download it here**:  
 🔗 [TESS Dataset on Kaggle](https://www.kaggle.com/datasets/manikantagade/tess-dataset)
 
-> 📌 Note: Make sure to exvract the dataset and update your local directory path accordingly in the code.
+> 📌 Note: Make sure to extract the dataset and update your local directory path accordingly in the code.
 
 ---
 
@@ -33,19 +34,67 @@ Sequential([
     Dropout(0.2),
     Dense(7, activation='softmax')
 ])
+```
+
+---
+
+## 📈 Training Details
+
+- **Epochs**: 100  
+- **Batch size**: 512  
+- **Loss function**: Categorical Crossentropy  
+- **Optimizer**: Adam  
+- **Validation split**: 20%  
+
+Training and validation accuracy/loss are visualized using `matplotlib`.
+
+---
+
+## 🛠️ How it Works
+
+1. **Load audio files** using `librosa`
+2. **Extract MFCC features**
+3. **Preprocess labels** using one-hot encoding
+4. **Train LSTM model**
+5. **Visualize accuracy/loss**
+6. **Save model as `model.h5`**
+
+---
+
+## 🚀 Future Work
+
+- Add real-time audio input for live emotion detection
+- Build a web interface using **Streamlit** or **Flask**
+- Explore transfer learning or CNN-based architectures
+- Improve label handling to include all emotion types
+
+---
+
+## 📦 Requirements
+
+```bash
+pip install numpy pandas librosa seaborn matplotlib tensorflow scikit-learn keras
+```
+
+You may also need:
+- Python 3.9 or 3.10 (TensorFlow compatibility)
+- [Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) (for Windows)
 
 
 
+## ✨ Acknowledgements
 
-📈 Training Details
-Epochs: 100
+This project was developed by [Chitwan Chauhan](https://github.com/chitwanchauhan) as part of a speech-based AI/ML portfolio.  
 
-Batch size: 512
+Feel free to fork or contribute!
 
-Loss function: Categorical Crossentropy
+---
 
-Optimizer: Adam
+## 🧠 Demo Preview
 
-Validation split: 20%
+[🔗 View Notebook on GitHub](https://github.com/chitwanchauhan/Speech-Emotion-Recognition/blob/main/notebook5569b2ff1e.ipynb)
 
-Training and validation accuracy/loss are visualized using matplotlib.
+---
+```
+
+Let me know if you'd like to include a section for deployment or if you're planning to host the app on Hugging Face or Streamlit Cloud.
