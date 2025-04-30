@@ -1,4 +1,4 @@
-# Speech-Emotion-Recognition# 🎤 Speech Emotion Recognition (SER)
+# Speech-Emotion-Recognition
 
 This project implements a Speech Emotion Recognition (SER) system using machine learning and deep learning techniques. It classifies emotions from speech audio samples using Mel-frequency cepstral coefficients (MFCCs) and a deep learning model.
 
