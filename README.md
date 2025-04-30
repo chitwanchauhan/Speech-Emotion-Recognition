@@ -95,6 +95,4 @@ Feel free to fork or contribute!
 [🔗 View Notebook on GitHub](https://github.com/chitwanchauhan/Speech-Emotion-Recognition/blob/main/notebook5569b2ff1e.ipynb)
 
 ---
-```
 
-Let me know if you'd like to include a section for deployment or if you're planning to host the app on Hugging Face or Streamlit Cloud.
