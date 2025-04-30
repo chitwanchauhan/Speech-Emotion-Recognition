@@ -9,8 +9,8 @@ This project focuses on recognizing human emotions from speech signals using a d
 
 The model uses the **TESS (Toronto Emotional Speech Set)** dataset, which consists of female voice recordings labeled with different emotions.
 
-📥 **Download it here**:  
-🔗 [TESS Dataset on Kaggle](https://www.kaggle.com/datasets/manikantagade/tess-dataset)
+ **Download it here**:  
+ [TESS Dataset on Kaggle](https://www.kaggle.com/datasets/manikantagade/tess-dataset)
 
 >  Note: Make sure to extract the dataset and update your local directory path accordingly in the code.
 
