@@ -1,99 +1,51 @@
-# Speech-Emotion-Recognition
+# 🎙️ Speech Emotion Recognition using LSTM and MFCC
 
-This project implements a Speech Emotion Recognition (SER) system using machine learning and deep learning techniques. It classifies emotions from speech audio samples using Mel-frequency cepstral coefficients (MFCCs) and a deep learning model.
-
----
-
-## 📌 Features
-
-- Audio preprocessing with `librosa`
-- Emotion classification using a neural network
-- Visualizations of waveforms and MFCCs
-- Dataset: [TESS]([https://zenodo.org/record/1188976](https://www.kaggle.com/datasets/manikantagade/tess-dataset))
-- Implemented and tested in Google Colab
+This project focuses on recognizing human emotions from speech signals using a deep learning approach. The system uses **MFCC (Mel-frequency cepstral coefficients)** for feature extraction and an **LSTM (Long Short-Term Memory)** model for classification. The goal is to classify speech into different emotions such as *happy*, *sad*, *angry*, *fear*, *disgust*, and *neutral*.
 
 ---
 
-## 🧠 Emotions Recognized
+## 📂 Dataset
 
-- Neutral
-- Calm
-- Happy
-- Sad
-- Angry
-- Fearful
-- Disgust
-- Surprised
+The model uses the **TESS (Toronto Emotional Speech Set)** dataset, which consists of female voice recordings labeled with different emotions.
+
+📥 **Download it here**:  
+🔗 [TESS Dataset on Kaggle](https://www.kaggle.com/datasets/manikantagade/tess-dataset)
+
+> 📌 Note: Make sure to exvract the dataset and update your local directory path accordingly in the code.
 
 ---
 
-## 🛠️ Tech Stack
+## 🧠 Model Architecture
 
-- Python
-- TensorFlow / Keras
-- Librosa
-- NumPy / Pandas
-- Matplotlib / Seaborn
+The model uses:
+- **MFCC** features (40 coefficients)
+- **LSTM** layer for sequential learning
+- **Dense** layers with ReLU activation
+- **Dropout** for regularization
+- **Softmax** for final emotion classification
 
----
+```python
+Sequential([
+    LSTM(123, input_shape=(40,1)),
+    Dense(64, activation='relu'),
+    Dropout(0.2),
+    Dense(32, activation='relu'),
+    Dropout(0.2),
+    Dense(7, activation='softmax')
+])
 
-## 📁 Dataset
 
-We use the [TESS dataset]([https://zenodo.org/record/1188976](https://www.kaggle.com/datasets/manikantagade/tess-dataset)), which contains 24 professional actors (12 male, 12 female) vocalizing two lexically-matched statements in a neutral North American accent.
 
-Download and extract it into the `audio_files/` directory.
 
----
+📈 Training Details
+Epochs: 100
 
-## 🧪 Model Training Steps
+Batch size: 512
 
-1. **Extract Features**: Using MFCC, Chroma, Mel spectrogram
-2. **Label Encoding**: Categorical labels for output
-3. **Train/Test Split**: 80/20 split
-4. **Model Architecture**: Fully connected neural network
-5. **Evaluation**: Accuracy on test data
+Loss function: Categorical Crossentropy
 
----
+Optimizer: Adam
 
-## 🚀 How to Run
+Validation split: 20%
 
-1. Clone this repo:
-    ```bash
-    git clone https://github.com/chitwanchauhan/Speech-Emotion-Recognition.git
-    cd Speech-Emotion-Recognition
-    ```
-
-2. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Run the notebook:
-    Open `notebook5569b2ff1e.ipynb` in Jupyter or Google Colab
-
----
-
-## 📊 Results
-
-The model achieves up to **95–95% accuracy** depending on the number of emotion classes and data samples used.
-
----
-
-## 📈 Sample Output
-
-- Confusion Matrix
-- Accuracy/Loss plots
-- MFCC waveform plots
-
----
-
-## 🧑‍💻 Author
-
-**Chitwan Chauhan**  
-[GitHub Profile](https://github.com/chitwanchauhan)
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
+Training and validation accuracy/loss are visualized using matplotlib.
