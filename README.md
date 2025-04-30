@@ -90,7 +90,7 @@ Feel free to fork or contribute!
 
 ---
 
-## 🧠 Demo Preview
+## Demo Preview
 
 [🔗 View Notebook on GitHub](https://github.com/chitwanchauhan/Speech-Emotion-Recognition/blob/main/notebook5569b2ff1e.ipynb)
 
