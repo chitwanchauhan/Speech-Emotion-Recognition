@@ -1,22 +1,22 @@
 
-# 🎙️ Speech Emotion Recognition using LSTM and MFCC
+#  Speech Emotion Recognition using LSTM and MFCC
 
 This project focuses on recognizing human emotions from speech signals using a deep learning approach. The system uses **MFCC (Mel-frequency cepstral coefficients)** for feature extraction and an **LSTM (Long Short-Term Memory)** model for classification. The goal is to classify speech into different emotions such as *happy*, *sad*, *angry*, *fear*, *disgust*, and *neutral*.
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 The model uses the **TESS (Toronto Emotional Speech Set)** dataset, which consists of female voice recordings labeled with different emotions.
 
 📥 **Download it here**:  
 🔗 [TESS Dataset on Kaggle](https://www.kaggle.com/datasets/manikantagade/tess-dataset)
 
-> 📌 Note: Make sure to extract the dataset and update your local directory path accordingly in the code.
+>  Note: Make sure to extract the dataset and update your local directory path accordingly in the code.
 
 ---
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 The model uses:
 - **MFCC** features (40 coefficients)
@@ -38,7 +38,7 @@ Sequential([
 
 ---
 
-## 📈 Training Details
+##  Training Details
 
 - **Epochs**: 100  
 - **Batch size**: 512  
@@ -50,7 +50,7 @@ Training and validation accuracy/loss are visualized using `matplotlib`.
 
 ---
 
-## 🛠️ How it Works
+##  How it Works
 
 1. **Load audio files** using `librosa`
 2. **Extract MFCC features**
@@ -61,7 +61,7 @@ Training and validation accuracy/loss are visualized using `matplotlib`.
 
 ---
 
-## 🚀 Future Work
+##  Future Work
 
 - Add real-time audio input for live emotion detection
 - Build a web interface using **Streamlit** or **Flask**
@@ -70,7 +70,7 @@ Training and validation accuracy/loss are visualized using `matplotlib`.
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 ```bash
 pip install numpy pandas librosa seaborn matplotlib tensorflow scikit-learn keras
@@ -82,7 +82,7 @@ You may also need:
 
 
 
-## ✨ Acknowledgements
+##  Acknowledgements
 
 This project was developed by [Chitwan Chauhan](https://github.com/chitwanchauhan) as part of a speech-based AI/ML portfolio.  
 
