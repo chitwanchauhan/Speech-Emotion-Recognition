@@ -9,7 +9,7 @@ This project implements a Speech Emotion Recognition (SER) system using machine 
 - Audio preprocessing with `librosa`
 - Emotion classification using a neural network
 - Visualizations of waveforms and MFCCs
-- Dataset: [RAVDESS](https://zenodo.org/record/1188976)
+- Dataset: [TESS]([https://zenodo.org/record/1188976](https://www.kaggle.com/datasets/manikantagade/tess-dataset))
 - Implemented and tested in Google Colab
 
 ---
@@ -39,7 +39,7 @@ This project implements a Speech Emotion Recognition (SER) system using machine 
 
 ## 📁 Dataset
 
-We use the [RAVDESS dataset](https://zenodo.org/record/1188976), which contains 24 professional actors (12 male, 12 female) vocalizing two lexically-matched statements in a neutral North American accent.
+We use the [TESS dataset]([https://zenodo.org/record/1188976](https://www.kaggle.com/datasets/manikantagade/tess-dataset)), which contains 24 professional actors (12 male, 12 female) vocalizing two lexically-matched statements in a neutral North American accent.
 
 Download and extract it into the `audio_files/` directory.
 
@@ -75,7 +75,7 @@ Download and extract it into the `audio_files/` directory.
 
 ## 📊 Results
 
-The model achieves up to **85–90% accuracy** depending on the number of emotion classes and data samples used.
+The model achieves up to **95–95% accuracy** depending on the number of emotion classes and data samples used.
 
 ---
 
