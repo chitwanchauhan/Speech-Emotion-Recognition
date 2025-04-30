@@ -81,13 +81,6 @@ You may also need:
 - [Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) (for Windows)
 
 
-
-##  Acknowledgements
-
-This project was developed by [Chitwan Chauhan](https://github.com/chitwanchauhan) as part of a speech-based AI/ML portfolio.  
-
-Feel free to fork or contribute!
-
 ---
 
 ## Demo Preview
