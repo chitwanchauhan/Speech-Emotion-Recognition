@@ -90,7 +90,7 @@ streamlit
 - The model works best with recordings of 3-10 seconds in length
 
 ![image](https://github.com/user-attachments/assets/d670f370-2b5b-4694-9ab9-7cd9fa9f15a5)
-![image](https://github.com/user-attachments/assets/e2d97779-8c9d-489c-9234-7e559b92fb41)
+![image](https://github.com/user-attachments/assets/68c10f29-c4ef-4596-91fa-d3be207abaa3)
 ![image](https://github.com/user-attachments/assets/de037a96-ed55-489c-ad1d-54811727874f)
 
 
